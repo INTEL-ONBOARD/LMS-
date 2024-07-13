@@ -48,6 +48,7 @@ body {
     display: flexbox;
     align-items: center;
     justify-content: center;
+    min-width: 10rem;
   }
   
   .search-bar input {
@@ -78,7 +79,8 @@ body {
     background-color: #673ab7;
     color: white;
     text-align: center;
-    padding: 50px 20px;
+    padding: 180px 20px;
+    min-height: 35rem;
   }
   
   .hero .pickup-btn {
@@ -94,6 +96,10 @@ body {
   .services {
     padding: 50px 20px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    align-items: center;
   }
   
   .services h2 {
@@ -105,6 +111,8 @@ body {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
+    border-bottom: 2px solid grey;
+    width: 60rem;
   }
   
   .service .icon {
