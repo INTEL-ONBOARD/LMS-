@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    background-color: #4a148c;
+    color: white;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.nav-item {
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px 0;
+    text-align: left;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.nav-item.active {
+    background-color: #9575cd;
+}
+
+.nav-item i {
+    margin-right: 10px;
+}
+
+.logout {
+    background-color: #673ab7;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.main-content {
+    margin-left: 200px;
+    padding: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #673ab7;
+    padding: 10px 20px;
+    color: white;
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 300px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info span {
+    margin-right: 10px;
+}
+
+.user-role {
+    font-size: 0.9em;
+}
+
+.user-avatar {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.dashboard {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.dashboard h1 {
+    font-size: 2em;
+    color: #ccc;
+}
+
+.dashboard .version {
+    font-size: 0.8em;
+    color: #ccc;
+}
+
+/* Icons can be added using FontAwesome or similar icon libraries */
+.icon-home::before {
+    content: "\f015"; /* Example unicode for home icon */
+}
+
+.icon-sales::before {
+    content: "\f07a"; /* Example unicode for sales icon */
+}
+
+.icon-report::before {
+    content: "\f080"; /* Example unicode for report icon */
+}
+
+.icon-logout::before {
+    content: "\f08b"; /* Example unicode for logout icon */
+}
