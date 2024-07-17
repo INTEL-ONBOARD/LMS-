@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+<div class="login min-h-full px-6 py-12 lg:px-8">
+
+    <div class="first sm:w-full sm:max-w-sm flex flex-col items-center justify-center">
+      <img class="h-20 w-20" src="login.png">
+      <h2 class="mt-1 text-left text-2xl font-bold leading-9 tracking-tight text-gray-900">Sign in</h2>
+    </div>
+
+  
+    <div class=" mt- sm:mx-auto sm:w-full sm:max-w-sm flex-col justify-between">
+      <form class="forms space-y-3" action="#" method="POST">
+
+        <div class="email">
+          <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
+          <div class="mt-2">
+            <input id="email" name="email" type="email" autocomplete="email" required class="block w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-gray-600 sm:text-sm sm:leading-6 bg-gray-100" placeholder="     example@gmail.com">
+          </div>
+        </div>
+  
+        <div>
+          <div class="flex items-center justify-between">
+            <label for="password" class="block text-sm font-medium leading-6 text-gray-900">Password</label>
+          </div>
+          <div class="mt-2">
+            <input id="password" name="password" type="password" autocomplete="current-password" required class="block w-full rounded-full border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 bg-gray-100" placeholder="">
+          </div>
+        </div>
+  
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-lg bg-black px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm  focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black-800">Not registered? Create an Account</button>
+        </div>
+
+        <div>
+          <button type="submit" class="flex w-full justify-center rounded-lg bg-purple-800 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-purple-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-purple-800">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+</body>
+</html>
