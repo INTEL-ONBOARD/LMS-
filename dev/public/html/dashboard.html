@@ -42,7 +42,7 @@
                             <a href="#" class="flex items-center" id="settings-icon">
                                 <span class="">
                                     <img src="/dev/public/resources/setting.png" class="h-6 w-6">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.75a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-4.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM12 4.75a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-4.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.75a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-4.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zM12 4.75a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0 9a1.5 1.5 0 110 3 1.5 1.5 0 010-3zm0-4.5a1.5 1.5 0 110 3 1.5 1.5 0 010-3z" />
                                     </img>
                                 </span>
                             </a>
@@ -70,10 +70,10 @@
                     </button>
                 </div>
                 <div class="flex items-center bg-gray-100 rounded-full p-2 w-full lg:w-2/3">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <input type="text" placeholder="search something..." class="bg-gray-100 outline-none ml-2 w-full">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-400 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l-2 2m2-2a8 8 0 100-16 8 8 0 000 16zM21 21l-4-4"></path>
                     </svg>
-                    <input type="text" placeholder="search something..." class="bg-gray-100 outline-none ml-2 w-full">
                 </div>
                 <div class="flex items-center ml-4">
                     <div class="mr-2">
@@ -96,14 +96,35 @@
 
         document.getElementById('home-icon').addEventListener('click', function() {
             document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">Home Tab</h2>';
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
         });
 
         document.getElementById('x-icon').addEventListener('click', function() {
             document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">X Tab</h2>';
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
         });
 
         document.getElementById('settings-icon').addEventListener('click', function() {
             document.getElementById('main-content').innerHTML = '<h2 class="text-center text-2xl">Settings Tab</h2>';
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
+        });
+
+        document.getElementById('logout-icon').addEventListener('click', function() {
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
+        });
+
+        document.getElementById('main-content').addEventListener('click', function() {
+            if (window.innerWidth < 1024) {
+                document.getElementById('sidebar').classList.add('-translate-x-full');
+            }
         });
     </script>
 </body>
